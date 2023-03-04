@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(243, 217, 217);
+    /* text-align: center; */
+    /* text align : means only the text it will align it to center */
+    /* position: relative;  ---> it says now the parent is not the screen but
+    now the parent of absolute is position box and at the same time need to
+    mention on the absolute place like (position : absolute) and then
+    you can give the place holder so it will place only inside the position */
+}
+
+#box-main{
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    /* margin: 0 auto; --> it will move whole body to center of window */
+    background-color: coral;
+    /* padding: 10px;  */
+    padding: 10px 10px 10px 10px;
+    margin: 40px auto;
+    /* padding means inside the border shadow of the box
+    padding syntax : top right bottom left
+    
+    Margin : placing of div in the HTML body
+    margin syntax : top right bottom left*/
+}
+
+#box-model{
+    border: 2px solid black;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    /* margin : 0 auto --> the box will be in center */
+    background-color: rgb(187, 184, 183);
+    /* padding: 10px;  */
+    
+    /* padding: 5px 5px 5px 5px; */
+    /* padding means inside the border shadow of the box
+    padding syntax : top right bottom left */
+}
+
+.input-1{
+    margin: 45px;
+    padding: 5px;
+    border: 2px solid rebeccapurple;
+}
+
+#position{
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px auto;
+    height: 300px;
+    background-color: rgb(129, 175, 216);
+}
+
+.box{
+    border: 1.5px solid black;
+    height: 45px;
+    width: 100px;
+    margin: 18px;
+    font-size: larger;
+    
+}
+
+.absolute{
+    background-color: antiquewhite;
+    /* position: absolute;
+    top: 0; */
+    /* position means it will cut out from position class and place it on top,
+    bottom meaning if i give position : absolute then  parent is whole html body
+    and then we can access it like top, bottom, left, right*/
+}
+
+.relative{
+    background-color: aqua;
+    /* position: relative;
+    left: 50px;
+    bottom: 10px; */
+    /* parent of relative is position , based on the position box it will move the 
+    relative only in its parent */
+}
+
+.sticky{
+    background-color: bisque;
+    position: sticky;
+    top: 0;
+   
+    /* If it goes to its position then it will stick into the position */
+}
+
+.fixed{
+    background-color: inherit;
+    /* parent inherit means it will take the attibutes of the parent */
+    /* position: fixed;
+    top: 0;
+    width: 200px;
+    If you want to fix the navigation bar at some particular place then you can position
+    as fixed it will get fixed to the place were you want
+    */
+    
+
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: right;
+    margin-bottom: 25px;
+    border: 1px solid rgb(119, 33, 11);
+}
+
+ul{
+    list-style-type: none;
+    font-size: larger;
+    font-weight: lighter;
+    font-style: normal;
+}
+li{
+    display: inline-block;
+    padding: 10px;
+}
+
+
+
+a{
+    /* it will remove the underlined link */
+    text-decoration: none;
+}

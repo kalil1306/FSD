@@ -1,0 +1,123 @@
+/* Goto Google font website and select the preferred font you like and then go to
+selected family and copy the import url link and paste it and then add font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+*{
+    text-align: center;
+    background-color: rgb(183, 218, 198);
+}
+
+.overflow-main{
+    /* width - align towards left side */
+    width: 70%;
+    /* height it doesnt aligned */
+    height: 300px;
+    /* border - based on height draws a border */
+    border: 1px solid royalblue;
+    /* background color --> will give the background color on the given border */
+    background-color: antiquewhite;
+    /* overflow: hidden; --> it will only show till the border rest will hide */
+    /* overflow: scroll; --> in border it will scroll till the content - extra scrollable */
+    /* overflow: auto; --> based on content availability will scroll down */
+    /* overflow: visible; --> all contents will visible even after the size change */
+    /* overflow-x: hidden; --> it will show the x axis content, rest will hidden */
+    /* overflow-y: hidden; --> it will show only y axis content, rest will hidden */
+    /* overflow-x: scroll; --> you can scroll from x axis direction */
+    /* overflow-y: scroll; --> you can scroll from y axis direction */
+    overflow: auto;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.dropdown-set{
+    width: 20%;
+    background-color: aquamarine;
+    border: 1px solid rebeccapurple;
+}
+
+.measurements{
+    margin: 0 auto;
+    border: 2px solid darkcyan;
+    width: 600px;
+    height: 50vw;
+    display: flex;
+    /* justify-content: center; will move to top of the center */
+    justify-content: center; 
+    /* align-items: center; -> will move towards from top to center */
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 20px;
+}
+
+#sample{
+    width: 1em;
+    height: 1em;
+    /* 1em --> means relative to the fonts size, based on font size box will created*/
+    /* rem --> based on the top of the element font size it will print the font */
+    /* vw --> viewport means on the screen there is some size and that size it will take as 
+    relevance */
+    border: 1px solid darkmagenta;
+}
+
+#sample-2{
+    width: 4pc;
+    height: 50%;
+    border: 1px solid darkmagenta;
+    background-color: blueviolet;
+}
+
+/* percent means its a child of sample-2 */
+#percent{
+    background-color: blanchedalmond;
+    width: 50%;
+    height: 50%;
+}
+
+/* Mesurements ::
+Absolute
+cm, mm, in
+px pixels (1/96) - 1 inch
+pt points (1/72) - 1 inch
+pc picas (1/12pt) - 1 inch
+*/
+
+/* Media query : It means based on screen size you can decorate the content
+and have a look on it below syntax
+Big screen size */
+
+@media only screen and (max-width : 700px){
+    body{
+        background-color: rgb(41, 48, 48);
+    }
+    .overflow-main{
+        background-color: yellowgreen;
+        font-family: 'Courier New', Courier, monospace;
+        width: 250px;
+    }
+}
+
+/* mid screen (tablet or mini laptop) */
+
+@media only screen and (max-width : 400px){
+    body{
+        background-color: rgb(185, 105, 192);
+    }
+    .overflow-main{
+        background-color: rgb(109, 133, 184);
+        font-family: 'Courier New', Courier, monospace;
+        width: 250px;
+    }
+}
+
+/* small screen */
+
+@media only screen and (max-width : 300px){
+    body{
+        background-color: rgb(245, 197, 95);
+    }
+    .overflow-main{
+        background-color: rgb(255, 111, 178);
+        font-family: 'Courier New', Courier, monospace;
+        width: 250px;
+    }
+}

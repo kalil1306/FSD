@@ -1,0 +1,145 @@
+div{
+    background-color: rgb(129, 139, 117);
+
+}
+
+p{
+    background-color: blanchedalmond;
+    color: blue;
+    text-align: center;
+}
+
+/* 
+Different types of properties : 
+List property
+Font property
+border property
+text property
+*/
+
+/* list property */
+
+ul{
+    list-style: circle;
+    list-style-position: outside;  
+}
+
+/* Font property */
+p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+/* border property */
+p{
+    border: 3px solid rgb(63, 24, 172);
+}
+
+/* text property */
+p{
+    text-align: center;
+}
+
+.ele1-div{
+    border: 1px solid rgb(37, 39, 33);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+.ele3-div{
+    border: 1px solid rgb(37, 39, 33);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+.ele5-div{
+    border: 1px solid rgb(37, 39, 33);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+.brd11{
+    border: 2px solid rgb(34, 110, 11);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+#ele31{
+    background-color: cadetblue;
+    border: 2px solid rgb(107, 22, 22);
+}
+
+#main-component{
+    
+    border: 2px solid rgb(224, 19, 163);
+    text-align: center;
+    text-decoration: line-through;
+}
+
+#container a div{
+    background-color: rgb(216, 80, 114);
+    margin: 5px;
+    padding: 2px;
+}
+
+.anc-link{
+    background-color: rgb(60, 201, 60) !important;
+}
+
+.block{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    width: 50px;
+    height:8px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.inline{
+    display: inline;
+    background-color: aqua;
+    padding: 7px;
+    margin: 10px;
+    /* It will not take hieght and width */
+    height: 45px;
+    width: 9846px;
+}
+
+.inline-block{
+    /* This will take paddings, margin, heigth and width */
+    display: inline-block;
+    background-color: aqua;
+    padding: 7px;
+    margin: 10px;
+    height: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#main-component_1{
+    
+    border: 2px solid rgb(224, 19, 163);
+    text-align: center;
+    text-decoration: wavy;
+}
+
+.clr{
+    background-color: bisque;
+}
+
+#id-clr{
+    background-color: rgb(129, 79, 175);
+}
+
+.inline{
+    display: inline;
+    padding: 2px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html-Css-Properties</title>
+
+    <!-- way for linking seperate style sheet that is called external CSS
+    This is third priority -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- This is the interal CSS which acts as second priority -->
+
+    <!-- <style>
+        div{
+            background-color: aquamarine;
+            text-align: center;
+            color: blueviolet;
+        }
+
+
+    </style> -->
+
+</head>
+<body>
+    <!-- This is just for one division in box type it is called Inline css
+    Only inline should be in body tag even if i give head tag, the first priority
+    will be in the inline priority first it will execute the inline style, because
+    this inline will gets loaded for the customers first priority-->
+    <div 
+    style=
+    "background-color: aquamarine;
+    text-align: center;
+    color: blue;
+    font-size: large;
+    width: 300px;
+    height: 50px;
+    "
+    >Hey I'm going to be styles</div>
+
+    <!-- This will be execute the external because there is no style on inline -->
+
+    <div >
+        Hey Iam Second Div
+    </div>
+    <p>Iam the para</p>
+
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Grapes</li>
+        <li>mango</li>
+    </ul>
+
+
+    <hr/>
+    <h3>Class : </h3>
+    <div class="ele1-div">Element - 1</div>
+    <div>Element - 2</div>
+    <div class="ele3-div">Element - 3</div>
+    <div>Element - 4</div>
+    <div class="ele5-div">Element - 5</div>
+
+
+    <!-- main id is given to lot of div
+    id and class - accept
+    in same div you should not give many id's
+    id and id - no
+    class and class - accept-->
+
+<main id="main-component">
+    <div class="ele11 brd11">Element - 1.1</div>
+    <div>Element - 2.1</div>
+    <div id="ele31">Element - 3.1</div>
+    <div>Element - 4.1</div>
+    <div>Element - 5.1</div>
+</main>
+<hr>
+<h3>Use of Important : </h3>
+<div id="container">
+    <a href="#"><div>link 1</div></a>
+    <a href="#"><div class="anc-link">link 2</div></a>
+</div>
+<hr>
+
+<h3>Display properties : </h3>
+<h4>Display block : </h4>
+<span class="block">Home</span>
+<span class="block">About</span>
+<span class="block">Contact</span>
+<span class="block">Skills</span>
+<hr> <br/>
+
+<h4>Display Inline : </h4>
+<div class="inline">Home </div>
+<div class="inline">About </div>
+<div class="inline">Contact </div>
+<div class="inline">Skills </div>
+<hr> <br/> <br/>
+
+<h4>Display Inline-block : </h4>
+<div class="inline-block">Home </div>
+<div class="inline-block">About </div>
+<div class="inline-block">Contact </div>
+<div class="inline-block">Skills </div>
+<hr> <br/> <br/>
+
+<h4>Task for understanding</h4>
+<main id="main-component_1">
+    <div class="clr"> Google </div>
+    <div id="id-clr"> Tesla </div>
+    <div class="inline"> Amazon </div>
+    <div>Youtube</div>
+    <div></div>
+</main>
+<hr>
+
+<br/>
+<br/>
+<br/>
+
+</body>
+</html>
+
+<!-- 
+Tpoics : CSS -- Cascading style sheet
+What is css?
+ways to use css 
+property & value 
+class vs id 
+use of important 
+display property: inline, block -->
+
+<!-- 
+Ways to use the CSS :
+3 ways to do :
+1. Inline - Highest priority
+2. Internal - second priority
+3. External - Third priority
+
+The way it will work is :
+If you comment the inline method, then it will internal method, if internal
+method is there then will execute, or else it will print external method.
+
+Note : 
+Priorities of execution is like inline > internal > External
+
+Class and id : which will be act as targetter
+For multiple div use as class
+For unique - use as id
+-->

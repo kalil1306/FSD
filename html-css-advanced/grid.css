@@ -1,0 +1,170 @@
+*{
+    text-align: center;
+    background-color: whitesmoke;
+    /* scroll-behaviour --> will scroll the page as smoothlly */
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    text-decoration: rgb(255, 255, 255);
+}
+
+nav{
+    /* height: 8vh; */
+    /* position: fixed; */
+    
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: bisque; */
+}
+
+ul{
+    /* it will move all the ul attributes to the end with the help of flex */
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    height: 5vh;
+    /* background-color: rgb(161, 154, 144); */
+}
+
+li{
+    display: inline-block;
+    /* padding means space between/inside the box/words
+    margin means moving in body where we need to point out the place */
+    margin: 10px;
+    padding: 5px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image{
+    display: grid;
+    place-items: center;
+    border: 1px solid rebeccapurple;
+    grid-area: image;
+}
+.info{
+    display: grid;
+    place-items: center;
+    border: 1px solid rebeccapurple;
+    grid-area: info;
+}
+.title{
+    display: grid;
+    place-items: center;
+    border: 1px solid rebeccapurple;
+    grid-area: title;
+}
+
+/* .icon{
+    display: none;
+} */
+
+#home{
+    /* background-color: rgb(155, 154, 154); */
+    /* height: 95vh; */
+    /* based on the commandable template below this it will give you the spacing
+    in html body */
+    display: grid;
+    /* this denotes the column */
+    /* grid-template: "image info title" 90%; */
+    grid-template: 
+    "image" 32%
+    "info" 32%
+    "title" 32%;
+    place-items: center;
+}
+
+#about, #skills{
+    /* background-color: rgb(170, 170, 170); */
+    /* height: 95vh; */
+    display: grid;
+    grid-template: 
+    "image info" 96%;
+    place-items: center;
+
+
+}
+#contact{
+    /* background-color: rgb(206, 206, 206); */
+    /* height: 95vh; */
+    display: grid;
+    grid-template: 
+    "image" 60%
+    "info" 30%;
+    place-items: center;
+
+}
+
+.com-section{
+    padding: 60px;
+    display: grid;
+    /* place-items --> it will place all the things in center of the place */
+    /* place-items: center; */
+    background-color: whitesmoke;
+    /* border: 1px solid black; */
+    height: 95vh;
+    /* grid-template-columns: 250px 550px; */
+    /* grid-template-rows: 40% 40%; */
+    /* grid-template-columns: repeat(2, 1fr); which means spread it into 2 columns
+    with same size of single fragments */
+    /* grid-template-columns: repeat(2, 1fr); */
+
+}
+
+/* it will hide the icon in the html body untill it reaches the particular pixels */
+.material-symbols-outlined{
+    visibility: hidden;
+}
+
+/* media query : 
+media query will change the aspect ratio and you can define the what needs to
+display on the particular pixels when the screen reduce or increases the size
+below example it says min-width and max-width it means the ranges lies between
+it and for each media query you can define the query what exactly you want to
+display the content on HTML body it can achieve only through the media screen
+********* very very important********
+
+
+*/
+@media only screen and (min-width : 325px) and (max-width : 470px){
+    .name{
+        display: none;
+    }
+    .icon{
+        display: block;
+    }
+    .com-section{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 100%;
+    }
+    .info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* it will show the icon  */
+    .material-symbols-outlined{
+        visibility: visible;
+    }
+    #about, #skills{
+        grid-template: 
+        "image" 43%
+        "info" 43%;
+    }
+
+}
+
+@media only screen and (min-width : 470px) and (max-width : 1200px){
+    *{
+        font-size: 17px;
+    }
+ 
+    #about, #skills{
+        grid-template: 
+        "image" 43%
+        "info" 43%;
+    }
+
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Kalil Company Limited" content="Kalilur Rahman">
+    <meta name="keyword" content="kcl, fullstack development">
+    <meta name="description" content="Student business, startup company for FULLSTACK DEVELOPER">
+    <title>KCL</title>
+</head>
+<body>
+    <!-- Heading tags-->
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+    <h6>Heading</h6>
+    <hr>
+    <!--List tags-->
+    <!--Unordered List-->
+    <h1>Un Ordered List</h1>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <hr>
+    <!--ordered List-->
+    <h1>Ordered List</h1>
+    <ol type="I">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ol>
+    <hr>
+    <h1>Division tags</h1>
+    <div>Hey I'am a Division : div</div> <!--This is one element-->
+    <hr>
+    <h1>Blocl Level Elements</h1>
+    <div>Divison : div</div>
+    <p><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+         when an unknown printer took a galley of type and scrambled it to make a type 
+         specimen book. It has survived not only five centuries, but also the leap 
+         into electronic typesetting, remaining essentially unchanged. 
+         It was popularised in the 1960s with the release of Letraset sheets 
+         containing Lorem Ipsum passages, and more recently with desktop publishing 
+         software like Aldus PageMaker including versions of Lorem Ipsum.</i></p> 
+         <!--It will take a paragraph or blog-->
+    <h5>headings</h5>
+    <hr>
+    <h1><mark>Inline elements</mark></h1> <!--It will print on same line instead of new line-->
+    <span><b><i>span--1</i></b></span>
+    <span><mark>span--2</mark></span>
+    <br> <!--It will break the next span line and print it on new the line-->
+    <span>span--3</span>
+    <br>
+    <span><strong>Strong</strong></span>
+    <hr>
+    
+    <!-- Semantic in HTML -->
+    <!--Semantic is as same as div but semantic is readable one instead of 
+        printing lot of "div" element-->
+    <h1>Semantic Elements</h1>
+    <header>Headings</header>
+    <main>
+        main body contents
+        <section>
+            Section elements
+            <aside>
+                Aside content
+            </aside>
+            <article>
+                Article elements
+            </article>
+        </section>
+    </main>
+
+    <footer>End content or contact us</footer>
+    <hr>
+    <!--HTML FORM-->
+    <h1>....HTML FORMS....</h1>
+    <main>
+        <fieldset>
+            <legend><h1>Fill the Details</h1></legend>
+        <form>
+            <label for="first-name">First Name</label> <!--For is an attributes-->
+            <input
+            type="text"
+            placeholder="Enter the First name"
+            name="first-name"
+            /> 
+            <br>
+            <label for="last-name">Last Name</label> <!--For is an attributes-->
+            <input
+            type="text"
+            placeholder="Enter the Last name"
+            name="last-name"
+            />
+            <br>
+            <label for="email">Email ID</label> <!--For is an attributes-->
+            <input
+            type="text"
+            placeholder="Enter the mail id"
+            required
+            name="email"
+            />
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+    </main>
+    <hr>
+    <!--Creating Table-->
+    <h1>Creation of Table</h1>
+    <table border="1" cellspacing="8" cellpadding="5">
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Batch</th>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Kalil</td>
+                <td>24</td>
+                <td>B43WE</td>
+            </tr>
+
+            <tr>
+                <td>kasheef</td>
+                <td>24</td>
+                <td rowspan="2">B43WE</td> <!--rowspan will update the 2 rows with same column-->
+            </tr>
+
+            <tr>
+                <td>Khalidh</td>
+                <td>24</td>
+                
+            </tr>
+
+            <tr>
+                <td>kareem</td>
+                <td colspan="2">nill</td> <!--colspan will update the 2 col with same row-->
+            </tr>
+        </tbody>
+
+    </table>
+    <hr>
+    <h1>Links and Images</h1>
+    <!--Anchor Tags-->
+    <h3> Anchor tags</h3>
+    <a href="https://pythontutor.com/visualize.html#mode=edit">JS Debugger</a>
+    <h3>Different tab anchor tags</h3>
+    <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">JS Debugger New</a>
+    <!--target = blank which means it will open in new tab-->
+
+    <h3>Image</h3>
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F676665912743441876%2F&psig=AOvVaw0JTux9CyESmKsk9ZXvO_Hi&ust=1676268244900000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPjYivynj_0CFQAAAAAdAAAAABAE" alt="Allah is One"/>
+    
+    <h3>Image from local</h3>
+    <img src="./image.jpg" alt="local-image"/>
+
+    <hr>
+    <h1>Inputs</h1>
+
+    <input type="text"/> <br>
+    <input type="number"/> <br>
+    <input type="color"/> <br>
+    <input type="password"/> <br>
+    <input type="checkbox">Male <br>
+    <input type = "date"> <br>
+    <input type = "datetime-local"> <br>
+    <input type = "file"> <br>
+    <input type = "hidden"> <br>
+    <input type = "image"> <br>
+    <input type="radio" name="gender">male<br>
+    <input type="radio" name="gender">Female<br>
+    <input type="radio" name="gender">Other<br>
+    <input type="range"> <br>
+    <input type="reset"> <br>
+    <input type="search" placeholder="Search Here"> <br>
+    <input type="time"> <br>
+    <input type="week"> <br>
+    <input type="url"> <br>
+    <input type="submit"> <br>
+    
+    <select>
+        <option> Choose One</option>
+        <option> Apple</option>
+        <option> Orange</option>
+        <option> Pomiee</option>
+        <option disabled> kalil</option>
+        <option selected> starbucks </option> <!--Selected means its a default value-->
+    </select> <br>
+
+    <textarea placeholder="Please tell your feedback"></textarea> <br>
+
+    <input list="fruits" type="text" placeholder="Enter the fruit you like"><br>
+    <datalist id="fruits">
+        <option> Apple</option>
+        <option> Orange</option>
+        <option> Pomiee</option>
+        <option>Kalil</option>
+    </datalist>
+
+</br></br></br>
+</body>
+</html>
