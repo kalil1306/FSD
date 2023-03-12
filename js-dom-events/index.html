@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1> JS Dom Events</h1>
+    <div class="inbuilt-box">
+        <button class="inbuilt-func" onclick="alertFunc(`Hey Iam triggered by Alert Function`)">Alert</button>
+        <button class="inbuilt-func" onclick="promptFunc()">Promt</button>
+        <button class="inbuilt-func" onclick="confirmFunc()">Confirm</button>
+    </div>
+
+    <div id="prompt-element"></div>
+
+
+    <div>
+        <h3>Set Timeout</h3>
+        <button onclick="countDown()">Start Timeout</button>
+        <div id="time-element"></div>
+
+        <h3>Set Interval</h3>
+        <button onclick="intervalFunc()">Start Interval</button>
+        <div id="interval-element"></div>
+    </div>
+    <div class="event-properties">
+        <h3>Click Event</h3>
+        <button onclick="clickEvent()">Click</button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
