@@ -15,7 +15,7 @@
     width: 150px;
     height: 150px;
     /* margin: 0 auto; --> it will move whole body to center of window */
-    background-color: coral;
+    background-color: rgb(241, 156, 126);
     /* padding: 10px;  */
     padding: 10px 10px 10px 10px;
     margin: 40px auto;
@@ -27,7 +27,7 @@
 }
 
 #box-model{
-    border: 2px solid black;
+    border: 2px solid rgb(167, 19, 19);
     width: 120px;
     height: 120px;
     margin: 0 auto;

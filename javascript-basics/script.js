@@ -2117,6 +2117,69 @@ console.log("reduce returns :", add)
 o/p : 
 reduce returns : 46
 .............................................
-****** HTML & CSS ************
-*/
+write an program to validate an IPv4 Address, Return valid, if it is a valid else return INVALID.
+Consider only the following criterias:
+Valid ip address should be in dot decimal forrmat(decimal seperated by dots)
+valid ip address should consists of four decimal numbers
+each decimal should range from 0 to 255 in javascript
 
+function validateIP(ip) {
+  const octets = ip.split(".");
+  if (octets.length !== 4) {
+    return "INVALID";
+  }
+  for (let i = 0; i < octets.length; i++) {
+    const octet = octets[i];
+    const value = parseInt(octet, 10);
+    if (isNaN(value) || value < 0 || value > 255) {
+      return "INVALID";
+    }
+  }
+  return "valid";
+}
+
+const ip1 = "192.168.1.1";
+const ip2 = "10.0.0.1";
+const ip3 = "255.255.255.0";
+const ip4 = "256.256.256.256";
+const ip5 = "192.168.1";
+
+console.log(validateIP(ip1)); // valid
+console.log(validateIP(ip2)); // valid
+console.log(validateIP(ip3)); // valid
+console.log(validateIP(ip4)); // INVALID
+console.log(validateIP(ip5)); // INVALID
+---------------------------------------------------
+Here's a JavaScript function validateNumberSequence that takes in a string of numbers separated 
+by a space (e.g., "20 21 22 23 23 24 26 28 29 30") and returns an object with two properties:
+
+missing: an array of numbers that are missing from the sequence
+repeated: an array of numbers that are repeated more than once in the sequence
+
+function validateNumberSequence(str) {
+  // Convert the string to an array of numbers
+  const nums = str.split(" ").map(Number);
+  
+  // Find the missing numbers
+  const min = Math.min(...nums);
+  const max = Math.max(...nums);
+  const missing = [];
+  for (let i = min; i <= max; i++) {
+    if (!nums.includes(i)) {
+      missing.push(i);
+    }
+  }
+  
+  // Find the repeated numbers
+  const repeated = nums.filter((num, index) => nums.indexOf(num) !== index && !repeated.includes(num));
+  
+  // Return the result as an object
+  return { missing, repeated };
+}
+
+// Example usage
+const result = validateNumberSequence("20 21 22 23 23 24 26 28 29 30");
+console.log(result);
+// Output: { missing: [25, 27], repeated: [23] }
+
+*/
