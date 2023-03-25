@@ -380,11 +380,4 @@ let input_box = document.createElement("input");
 
 //Mouse event
 
-
-
-
-
-
-
-
 document.body.append(inputArea, validationString, formElement, input_box);
