@@ -200,6 +200,7 @@ Hi Kalilur Rahman A R, please tell your age
 Hi Kalilur Rahman A R we get your age as 24
 ---------------------------------------------------
 //fetch data from the url
+fetch is the API integeration it will return as promise and it will act as function
 
 fetch("https://restcountries.com/v3.1/all")
 .then((response)=> response.json()) // json will return a object
@@ -351,7 +352,8 @@ getName("Kalilur Rahman A R")
 .then((resData) => verifyNameAndAge(resData, 24))
 .catch((err)=> log(`Invalid or empty name`))
 
-//fetch data from the url
+//fetch data from the url and fetch is OOTB function will return promise
+//fetch is the maximum used for API integeration
 
 fetch("https://restcountries.com/v3.1/all")
 .then((response)=> response.json()) // json will return a object
