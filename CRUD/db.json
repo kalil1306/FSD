@@ -1,0 +1,56 @@
+[
+    {
+     "name": "kalil",
+     "batch": "B43WE",
+     "age": "24",
+     "id": "1"
+    },
+    {
+     "name": "kasheef",
+     "batch": "B43WE",
+     "age": "21",
+     "id": "2"
+    },
+    {
+     "name": "kareem",
+     "batch": "B43WE",
+     "age": "26",
+     "id": "3"
+    },
+    {
+     "name": "mafaaz",
+     "batch": "B43WE",
+     "age": "11",
+     "id": "4"
+    },
+    {
+     "name": "khalidh",
+     "batch": "B43WE",
+     "age": "1",
+     "id": "5"
+    },
+    {
+     "name": "sadaam",
+     "batch": "B43WE",
+     "age": "23",
+     "id": "6"
+    },
+    {
+     "name": "Zaynab",
+     "batch": "B43WE",
+     "age": "27",
+     "id": "7"
+    },
+    {
+     "name": "Imran",
+     "batch": "B44WE",
+     "age": 24,
+     "id": "8"
+    },
+    {
+     "name": "Imran-OA",
+     "batch": "B44WeekDay",
+     "age": 24,
+     "id": "9"
+    }
+   ]

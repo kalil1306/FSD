@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.css"/>
+</head>
+<body>
+
+<!-- Creation of the form and getting an input from the user when they hit button  -->
+    <div class="container">
+        <form class="add-student-form">
+            <h3>Create or Insert New student</h3>
+            <input
+            type="text"
+            name="name"
+            value=""
+            placeholder="Enter Student Name"
+            class="input-text"
+            >
+            <br><br>
+
+            <input
+            type="text"
+            name="batch"
+            value=""
+            placeholder="Enter Student Batch"
+            class="input-text"
+            >
+            <br><br>
+
+            <input
+            type="text"
+            name="age"
+            value=""
+            placeholder="Enter Student Age"
+            class="input-text"
+            >
+
+            <input
+            type="submit"
+            name="submit"
+            value="Create new student"
+            placeholder="Enter Student Age"
+            class="submit"
+            >
+            <br><br>
+        </form>
+    </div>
+
+    <p id="head">Render Students : <button id="new-stu-btn">Add Student</button> </p>
+
+
+    <div id="student-list"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+To generate the api of our own the url is https://mockapi.io/projects/
+created api is https://64291bb45a40b82da4cccad3.mockapi.io/kcl_students
+
+new project > add fields  > new resources > enter name > create
+
+
+ -->

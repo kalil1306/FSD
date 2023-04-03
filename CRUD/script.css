@@ -1,0 +1,47 @@
+*{
+    background-color: rgb(224, 221, 217);
+}
+
+
+.card{
+    justify-content: center;
+    display: inline-grid;
+    padding: 10px;
+    width: 20rem;
+    height: 25rem;
+    margin: 1rem 2rem;
+    border: 2px solid rgb(3, 2, 1);
+    box-shadow: 0 10px 85px 0 rgba(0, 0, 0, 0.2)
+                0 16px 40px 0 rgba(95, 70, 70, 0.2)
+}
+
+.input-text{
+    border-radius: 7px;
+    height: 2rem;
+    width: 25rem;
+    font-size: 15px;
+    margin: auto;
+}
+
+.container{
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    opacity: 0.78;
+}
+
+button, .submit{
+    display: inline-block;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 2rem;
+    width: auto;
+    background-color: rgb(38, 150, 150);
+    color: white;
+    justify-content: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
