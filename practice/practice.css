@@ -129,3 +129,8 @@ ul{
     background-color: antiquewhite;
     width: 150px;
 }
+
+.inline{
+    display: inline;
+    padding: 5px;
+}
