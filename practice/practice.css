@@ -1,0 +1,131 @@
+/* *{
+    background-color: rgb(180, 241, 213);
+} */
+
+div{
+    background-color: rgb(216, 165, 221);
+}
+
+p{
+    background-color: rgb(229, 236, 234);
+    color: rgb(184, 119, 41);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    border: 2px solid rgb(184, 119, 41);
+    border-radius: 1rem;
+}
+
+ul{
+    background-color: rgb(190, 190, 190);
+    list-style: decimal-leading-zero;
+    list-style-position: outside;
+}
+
+.ele-1{
+    background-color: rgb(165, 224, 224);
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.ele-3{
+    background-color: rgb(94, 116, 116);
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.ele-5{
+    background-color: rgb(65, 228, 228);
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+#main-component div{
+    background-color: rgb(211, 184, 148);
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.brdm1{
+    background-color: rgb(160, 160, 253) !important;
+    text-align: start !important;
+}
+
+#container a div{
+    background-color: rgb(201, 140, 140);
+    color: black;
+}
+
+.anc-link{
+    background-color: rgb(194, 245, 245) !important;
+    color: brown !important;
+}
+
+.block{
+    display: block;
+    border: 1px solid navy;
+    padding: 2px;
+    margin: 5PX;
+    border-radius: 5px;
+    width: 150px;
+    background-color: bisque;
+    text-align: center;
+}
+
+.inline{
+    display: inline;
+    border: 1px solid navy;
+    padding: 5px;
+    margin: 25PX;
+    border-radius: 5px;
+    width: 9999px;
+    background-color: rgb(74, 197, 100);
+    text-align: center;
+}
+
+.inline-block{
+    display: inline-block;
+    border: 1px solid navy;
+    padding: 5px;
+    margin: 25PX;
+    border-radius: 5px;
+    width: 150px;
+    background-color: rgb(179, 197, 74);
+    text-align: center;
+}
+
+#main-component-1{
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-decoration: wavy;
+    text-align: center;
+}
+
+.class-clr{
+    border: 2px solid black;
+    margin: 5px;
+    background-color: antiquewhite;
+}
+
+#id-clr{
+    border: 2px solid black;
+    margin: 10px;
+    background-color: antiquewhite;
+    width: 150px;
+}
