@@ -109,3 +109,10 @@ var str2 = 'ur'
 
 console.log(str1 + "     " + str2)
 console.log(str1.concat(str2))
+
+log("--------------------------------------------");
+
+let arr = ['apple', 'orange', 'mango']
+for(let i = 0; i < arr.length; i++){
+    console.log("This is from for loop : " +i)
+}
