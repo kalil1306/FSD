@@ -116,3 +116,12 @@ let arr = ['apple', 'orange', 'mango']
 for(let i = 0; i < arr.length; i++){
     console.log("This is from for loop : " +i)
 }
+
+var descArr = [];
+let arr1 = ['apple,kalil', 'orange', 'mango', 'fruit']
+
+for(var i = 0; i < arr1.length; i++){
+    descArr = arr1[i].split(',');
+    console.log(descArr)
+}
+
