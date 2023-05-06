@@ -102,7 +102,7 @@ Value-3 ::: 110
 ---------------------------------------------
 Promise.all() :::
 
-Promise.all() you can all the promises as a array and thrn you can use it as ".then" or
+Promise.all() you can take all the promises as a array and then you can use it as ".then" or
 ".catch".
 Note :: If you want to see all the answers then all the promises must be an resolved param
 If anyone is reject then it will only print the rejected one from promise
@@ -268,6 +268,9 @@ chainPromise
     log(`Value-3 ::: ${val3}`)
     return val3 + 50;
 })
+.then((val4)=>
+{console.log(`Value of 4 is :${val4}`);
+})
 
 log("-----------------------------------------------")
 
@@ -347,9 +350,9 @@ getName("Kalilur Rahman A R")
 })
 .then((resValue) => {
     getAge(resValue)
-    return resValue;
+    return resValue; // in res = Kalilur Rahman A R
 })
-.then((resData) => verifyNameAndAge(resData, 24))
+.then((resData) => verifyNameAndAge(resData, 24)) // in resData you have kalilur Rahman A R
 .catch((err)=> log(`Invalid or empty name`))
 
 //fetch data from the url and fetch is OOTB function will return promise
@@ -361,8 +364,10 @@ fetch("https://restcountries.com/v3.1/all")
     log(data)
     data.forEach((ele) =>{
 
+        // log(ele)
+
         const createCountryObj = {
-            ...ele,
+            // ...ele,
             name : ele.name.common,
             flags : ele.flags.png,
             population : ele.population,
@@ -380,7 +385,7 @@ function createCountries({name, flags, population, region, capital}){
     <div class="container">
     <img src="${flags}" alt="${name}" class="flag"/>
     <div class="info">
-    <h2>${name}</h2>
+    <h1>${name}</h1>
     <p> <span> Population : "${population}" </span></p>
     <p><span>Region : ${region} </span></p>
     <p><span>Capital : ${capital} </span></p>
@@ -399,3 +404,26 @@ above example into a structured container and then these function need to call
 in promise chaining you can desconstruct the obj ana pass it to the UI function
 
 */
+
+
+let kalil = [
+    {
+        id : 1,
+        name : 'Kalil'
+    },
+    {
+        id : 2,
+        name : 'kasheef'
+    },
+    {
+        id : 3,
+        name : 'kasheef'
+    }
+]
+
+console.log(kalil)
+
+kalil.forEach((val, idx, accArr)=>{
+    console.log(val)
+    console.log(val.name)
+})

@@ -240,9 +240,6 @@ console.log(stuDetails)
 o/p : {name: 'kalil', age: 45}
 
 -----------------------------------------------
-
-*/
-
 const name = 'kalil';
 const age = 45;
 
@@ -252,3 +249,73 @@ const stuDetails = {
 }
 
 console.log(stuDetails)
+
+
+await resolveAfter2Seconds(x) { 
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(x);
+      }, 2000);
+    });
+  }
+   
+  async function f1() {
+    var x =  await resolveAfter2Seconds(10);
+    console.log(x);
+  }
+   
+  f1();
+
+*/
+
+var data = {
+    "stla_parameters":{
+        "application_id":"7261",
+        "application_name":"8",
+        "environment":"dev",
+        "stla_region":"EE"
+    },
+    "account_access":{
+        "view":"8.ro",
+        "standard":"8.rw",
+        "manager":"8.manager"
+    },
+        "aws_parameters":{
+            "aws_region":"eu-west-1",
+            "aws_azs":2,
+            "network_model":"standalone"
+        },
+        "drive_it_parameters":{
+            "ticket_identifier":"TASK6299410",
+            "requester":{
+                "tid":"T6704RK",
+                "first_name":"KALILUR",
+                "last_name":"RAHMAN A R"
+            }
+        },
+        "request_type":"general"
+    };
+
+console.log("The data is :", data);
+
+console.log("The data is :", data.stla_parameters.application_name);
+
+var stringify_result = JSON.stringify(data); // takes js object and transform it into a JSON string
+console.log("Converts as a JSON String(stringify) :",stringify_result); //
+
+var parse_result = JSON.parse(stringify_result); // takes json string and transform it to an javascript object
+console.log("Converts as a Javascript object :",parse_result)
+
+for (obj in parse_result){
+    var values = parse_result[obj];
+    for(obj2 in values){
+        console.log(obj2 + ' : ' + values[obj2])
+       // console.log('----------------------------------')
+    }
+    // console.log(obj + ' : ' + parse_result[obj])
+}
+
+//now try to do the loop in this after your breakfast
+
+
+

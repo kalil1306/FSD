@@ -130,7 +130,7 @@ promise way :::
 
 }
 
-//operate_bank_details("12345787", "debit");
+operate_bank_details("12345787", "debit");
 
 
 async function fetchData(){
