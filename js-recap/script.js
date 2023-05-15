@@ -303,6 +303,11 @@ console.log("The data is :", data.stla_parameters.application_name);
 var stringify_result = JSON.stringify(data); // takes js object and transform it into a JSON string
 console.log("Converts as a JSON String(stringify) :",stringify_result); //
 
+let escaped_string = escape()
+
+let encoded = encodeURIComponent(stringify_result);
+console.log('encoded : ', encoded); // instead of use escaped string
+
 var parse_result = JSON.parse(stringify_result); // takes json string and transform it to an javascript object
 console.log("Converts as a Javascript object :",parse_result)
 
